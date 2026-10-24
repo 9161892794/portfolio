@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ashish Kumar Yadav | Frontend Developer & Shopify Developer</title>
+<meta name="description" content="Portfolio of Ashish Kumar Yadav, a B.Tech Computer Science graduate (2026) with 1 year of academic experience in front-end development using HTML, CSS, JavaScript and React.js.">
+<meta property="og:type" content="website"><meta property="og:title" content="Ashish Kumar Yadav | Developer Portfolio">
+<meta property="og:description" content="Front-end projects by Ashish Kumar Yadav.">
+<meta property="og:image" content="assets/images/og-image.png"><meta name="theme-color" content="#0e1116">
+<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
+</head>
+<body>
+<div id="loader" aria-hidden="true"><span></span></div><div id="progress"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap nav-in">
+<a href="#home" class="logo">Ashish Yadav</a>
+<nav id="menu" aria-label="Primary">
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#services">Services</a><a href="#contact">Contact</a>
+</nav>
+<div class="nav-actions">
+<button id="theme" class="icon-btn" aria-label="Switch to light mode" type="button">◐</button>
+<a class="btn sm" data-resume download>Resume</a>
+<button id="burger" class="icon-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu" type="button">☰</button>
+</div></div></header>
+
+<main id="main">
+<section id="home" class="hero"><div class="wrap hero-grid">
+<div>
+<p class="muted">Hi, I'm Ashish Yadav</p>
+<h1>Computer Science Graduate &amp; Technology Professional</h1>
+<p class="role">I work as a <span id="typed" aria-live="off"></span><i class="caret"></i></p>
+<p class="lead">B.Tech Computer Science graduate (2026) with 1 year of academic experience. I build clean, responsive interfaces with HTML, CSS, JavaScript and React.js, and I am looking for an entry-level Shopify Developer or front-end role.</p>
+<div class="btns"><a class="btn" href="#projects">View My Work</a><a class="btn ghost" data-resume download>Download Resume</a><a class="btn ghost" href="#contact">Contact Me</a></div>
+<div class="social"><a data-link="linkedin" aria-label="LinkedIn">LinkedIn</a><a data-link="mailto" aria-label="Email">Email</a></div>
+</div>
+<div class="hero-side"><img class="hero-photo" src="assets/images/profile.jpg" alt="Portrait of Ashish Kumar Yadav" width="240" height="240" fetchpriority="high"><div class="code glass" aria-hidden="true"><div class="dots"><i></i><i></i><i></i></div>
+<pre><code><b>const</b> ashish = {
+  degree: <s>"B.Tech, Computer Science"</s>,
+  graduated: <s>2026</s>,
+  roles: [<s>"Frontend"</s>, <s>"Shopify"</s>],
+  stack: [<s>"HTML"</s>, <s>"CSS"</s>, <s>"JS"</s>, <s>"React"</s>],
+  openToWork: <b>true</b>
+};</code></pre></div></div>
+</div></section>
+
+<section id="about"><div class="wrap"><h2>About me</h2>
+<div class="two">
+<div class="reveal"><p>I'm a Computer Science graduate who enjoys building things for the web and making sure they work. I have one year of academic experience in front-end development, building responsive interfaces with HTML, CSS, JavaScript and React.js.</p>
+<p>I like breaking a problem into small parts, checking assumptions and fixing the root cause instead of the symptom. I'm looking for roles as a Shopify Developer, Frontend Developer, Software Developer or Data Analyst where I can keep learning and ship useful work.</p>
+<ul class="ticks"><li>Education: B.Tech in Computer Science, 2022 to 2026</li><li>Interests: web development, React.js, Shopify themes, data analysis</li><li>Goal: grow into a well-rounded software professional</li></ul></div>
+<div><img class="avatar" src="assets/images/profile.jpg" alt="Portrait of Ashish Kumar Yadav" width="120" height="120" loading="lazy" onerror="this.outerHTML='<div class=avatar aria-hidden=true>AY</div>'"><div class="stats" id="stats"></div></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2><p class="sub">Bars show my own honest comfort level. Edit levels in <code>js/projects.js</code>.</p><div class="grid g3" id="skillGrid"></div></div></section>
+<section id="projects"><div class="wrap"><h2>Projects</h2><div class="filters" id="filters" role="group" aria-label="Filter projects"></div><div class="grid g3" id="projGrid"></div></div></section>
+<section id="education"><div class="wrap"><h2>Education</h2><ol class="timeline" id="eduList"></ol></div></section>
+<section id="services"><div class="wrap"><h2>Services</h2><div class="grid g3" id="svcGrid"></div></div></section>
+
+<section id="resume"><div class="wrap"><div class="cta glass reveal"><h2>Let's Build Something Great Together</h2><p>Download my resume or send me a message.</p><div class="btns c"><a class="btn" data-resume download>Download Resume</a><a class="btn ghost" href="#contact">Contact Me</a></div></div></div></section>
+
+<section id="contact"><div class="wrap"><h2>Contact</h2>
+<div class="two">
+<div class="reveal"><p>Have a role, project or question? Send a message and I'll reply by email.</p>
+<ul class="info"><li>Email: <a data-link="mailto" id="emailText"></a> <button class="chip" id="copyEmail" type="button">Copy email</button></li><li>Phone: <a data-link="tel" id="phoneText"></a></li><li><a data-link="linkedin">LinkedIn</a></li></ul></div>
+<form id="form" class="card reveal" novalidate>
+<label>Name<input name="name" autocomplete="name" required></label><small class="err" data-for="name"></small>
+<label>Email<input name="email" type="email" autocomplete="email" required></label><small class="err" data-for="email"></small>
+<label>Subject<input name="subject" required></label><small class="err" data-for="subject"></small>
+<label>Message<textarea name="message" rows="5" required></textarea></label><small class="err" data-for="message"></small>
+<button class="btn" type="submit">Send message</button><p id="status" role="status"></p>
+</form></div></div></section>
+</main>
+
+<footer><div class="wrap foot">
+<div><strong>Ashish Yadav</strong><p class="muted">Front-end development and data analysis.</p></div>
+<nav aria-label="Footer"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+<div class="social"><a data-link="linkedin">LinkedIn</a><a data-link="mailto">Email</a></div>
+<p class="muted copy">© <span id="year"></span> Ashish Kumar Yadav</p></div></footer>
+<button id="top" class="icon-btn" aria-label="Back to top" type="button" hidden>↑</button>
+
+<dialog id="modal" aria-labelledby="mTitle"><button class="icon-btn close" id="mClose" aria-label="Close details" type="button">✕</button><div id="mBody"></div></dialog>
+
+<script src="js/projects.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script>
+</body></html>
